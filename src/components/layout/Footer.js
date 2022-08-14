@@ -1,36 +1,24 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer className="container mx-auto py-16 px-3 mt-48 mb-8 text-gray-800">
-    <div className="flex -mx-3">
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">About Us</h2>
-        <p className="mt-5">Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
+  <footer class="bg-gray-800">
+    <div class="container px-6 py-8 mx-auto">
+      <div class="text-center">
+        <a href="#" class="text-2xl font-bold text-white hover:text-gray-300">Steuerberatung Alexander Rabl</a>
       </div>
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Important Links</h2>
-        <ul className="mt-4 leading-loose">
-          <li>
-            <a href="https://codebushi.com">Terms &amp; Conditions</a>
-          </li>
-          <li>
-            <a href="https://codebushi.com">Privacy Policy</a>
-          </li>
-        </ul>
-      </div>
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Social Media</h2>
-        <ul className="mt-4 leading-loose">
-          <li>
-            <a href="https://dev.to/changoman">Dev.to</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/HuntaroSan">Twitter</a>
-          </li>
-          <li>
-            <a href="https://github.com/codebushi/gatsby-starter-lander">GitHub</a>
-          </li>
-        </ul>
+
+      <hr class="my-10 border-gray-700" />
+
+      <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+        <p class="text-sm text-gray-400">© Copyright 2021. All Rights Reserved.</p>
+
+        <div class="flex mt-3 -mx-2 sm:mt-0">
+          <a href="#" class="mx-2 text-sm hover:text-gray-300" aria-label="Reddit"> AAB </a>
+
+          <a href="#" class="mx-2 text-sm hover:text-gray-300" aria-label="Reddit"> Privacy </a>
+
+          <a href="#" class="mx-2 text-sm hover:text-gray-300" aria-label="Reddit"> Cookies </a>
+        </div>
       </div>
     </div>
   </footer>

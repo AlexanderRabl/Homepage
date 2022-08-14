@@ -19,7 +19,7 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <nav className="flex flex-wrap items-center justify-between p-4 mb-4 bg-blue-500">
+      <nav className="flex flex-wrap items-center justify-between p-4 bg-blue-500">
         <div className="flex items-center flex-shrink-0 mr-6 text-white">
           <span className="text-xl font-semibold tracking-tight lg:ml-40">
             Alexander Rabl
