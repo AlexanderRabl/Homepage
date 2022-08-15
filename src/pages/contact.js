@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
+import PageHeader from '../components/PageHeader';
 
 const mainColor = '#4299e1';
 
 const Contact = () => (
   <Layout>
+    <PageHeader>Contact</PageHeader>
     <section id="contact" className="py-10 lg:py-20">
       <div
         class="max-w-screen-xl mt-3 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-600">

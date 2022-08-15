@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
 import { StaticImage } from "gatsby-plugin-image"
+import PageHeader from '../components/PageHeader';
 
 const About = () => {
     return (
         <Layout>
+            <PageHeader>About me</PageHeader>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-24 mx-auto flex flex-wrap">
                     <div class="flex flex-wrap w-full">
