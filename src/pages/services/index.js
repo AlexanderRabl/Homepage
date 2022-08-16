@@ -97,6 +97,7 @@ const Services = () => {
         secondarySlot={<SvgCharts />}
       />
       <SplitSection
+        reverseOrder
         primarySlot={
           <div className="lg:pl-32 xl:pl-48">
             <h3 className="text-3xl font-semibold leading-tight">
