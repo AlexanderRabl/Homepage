@@ -31,8 +31,10 @@ const Services = () => {
           <div className="lg:pr-32 xl:pr-48">
             <h3 className="text-3xl font-semibold leading-tight">Steuerberatung</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-            <Trans>Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-              against the closest competitors</Trans>
+            <Trans>Test1</Trans>
+            <br></br>
+            <br></br>
+            <Trans>Test1</Trans>
             </p>
           </div>
         }
