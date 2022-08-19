@@ -9,7 +9,8 @@
     "build": "gatsby build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "autoprefixer": "^10.4.8",
@@ -25,6 +26,7 @@
     "gatsby-source-filesystem": "^4.20.0",
     "gatsby-transformer-remark": "^5.20.0",
     "gatsby-transformer-sharp": "^4.20.0",
+    "gh-pages": "^4.0.0",
     "i18next": "^21.9.0",
     "postcss": "^8.4.16",
     "react": "^18.2.0",

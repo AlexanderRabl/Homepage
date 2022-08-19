@@ -34,5 +34,6 @@ module.exports = {
         }
       }
     }
-  ]
+  ],
+  pathPrefix: "/homepage",
 };
