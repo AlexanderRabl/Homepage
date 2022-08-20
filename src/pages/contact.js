@@ -85,7 +85,7 @@ const Contact = () => {
             </div>
             <div class="mt-8">
               <button
-                class="uppercase text-sm font-bold tracking-wide bg-primary-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                class="uppercase text-sm font-bold tracking-wide bg-primary-700 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
                 <Trans>ContactFormSend</Trans>
               </button>
             </div>
