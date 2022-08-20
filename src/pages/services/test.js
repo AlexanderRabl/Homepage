@@ -6,7 +6,7 @@ const Test = () => {
     return (
         <Layout>
             <PageHeader>Test Service</PageHeader>
-            <section class="text-gray-600 body-font">
+            <section className="text-gray-600 body-font">
                 Hi
             </section>
         </Layout>

@@ -95,34 +95,3 @@ const Header = () => {
 };
 
 export default Header;
-
-{/* <header className="sticky top-0 bg-white shadow">
-      <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
-        <div className="flex items-center text-2xl">
-          <div className="w-12 mr-3">
-            <LogoIcon />
-          </div>
-          <Link className="px-4" to="/">
-            Alexander und Kathi
-          </Link>
-        </div>
-        <div className="flex mt-4 sm:mt-0">
-          <Link className="px-4" to="/about">
-            About
-          </Link>
-          <Link className="px-4" to="/services">
-            Services
-          </Link>
-          <Link className="px-4" to="/testimonials">
-            Testimonials
-          </Link>
-          <Link className="px-4" to="/news">
-            News
-          </Link>
-          <Link className="px-4" to="/contact">
-            Contact
-          </Link>
-        </div>
-        
-      </div>
-    </header> */}

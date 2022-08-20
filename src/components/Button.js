@@ -6,16 +6,22 @@ const sizes = {
   xl: `py-5 px-16 text-lg`
 };
 
-const Button = ({ children, className = '', size }) => {
+const Button = ({ children, className = '' }) => {
   return (
     <button
       type="button"
       className={`
-        ${sizes[size] || sizes.default}
         ${className}
-        bg-primary-700
-        hover:bg-primary-500
         rounded
+        text-white
+        transition-colors
+        duration-200
+        transform
+        bg-primary-700
+        rounded-md
+        hover:bg-primary-400
+        focus:outline-none
+        focus:bg-primary-400
         text-white
     `}
     >
