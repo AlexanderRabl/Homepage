@@ -5,6 +5,22 @@ module.exports = {
     "./src/templates/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['"Inter"',
+      'system-ui',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      '"Noto Sans"',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+      '"Noto Color Emoji"',]
+    },
     extend: {
       colors: {
         "primary": {
@@ -20,7 +36,7 @@ module.exports = {
           "800": "#708d7d",
           "900": "#668373"
         },
-      }
+      },
     },
   },
   plugins: [],

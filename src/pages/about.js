@@ -1,7 +1,22 @@
 import React from 'react';
+import { graphql } from 'gatsby'
 import Layout from '../components/layout/Layout';
 import { StaticImage } from "gatsby-plugin-image"
 import PageHeader from '../components/PageHeader';
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
 
 const About = () => {
     return (

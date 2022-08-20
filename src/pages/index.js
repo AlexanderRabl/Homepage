@@ -1,12 +1,24 @@
 import React from 'react';
 import Button from '../components/Button';
 import { graphql, useStaticQuery } from 'gatsby'
-import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import PageHeader from '../components/PageHeader';
-import StatsBox from '../components/StatsBox';
 import HeroImage from '../svg/HeroImage';
 import NewsItemMini from '../components/NewsItemMini';
+
+// export const query = graphql`
+//   query($language: String!) {
+//     locales: allLocale(filter: {language: {eq: $language}}) {
+//       edges {
+//         node {
+//           ns
+//           data
+//           language
+//         }
+//       }
+//     }
+//   }
+// `;
 
 const Index = () => {
   const articles = useStaticQuery(graphql`

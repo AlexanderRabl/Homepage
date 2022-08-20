@@ -6,8 +6,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import PageHeader from '../components/PageHeader';
 import Button from '../components/Button';
 
-const mainColor = '#4299e1';
-
 export const query = graphql`
   query($language: String!) {
     locales: allLocale(filter: {language: {eq: $language}}) {

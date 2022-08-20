@@ -5,6 +5,20 @@ import LabelText from '../components/LabelText';
 import NewsItem from "../components/NewsItem"
 import PageHeader from '../components/PageHeader';
 
+// export const query = graphql`
+//   query($language: String!) {
+//     locales: allLocale(filter: {language: {eq: $language}}) {
+//       edges {
+//         node {
+//           ns
+//           data
+//           language
+//         }
+//       }
+//     }
+//   }
+// `;
+
 const News = () => {
     const articles = useStaticQuery(graphql`
     {
@@ -16,7 +30,7 @@ const News = () => {
                 description {
                   description
                 }
-                published
+                published(formatString: "DD.MM.YYYY")
                 author
                 image {
                     gatsbyImageData(width: 600)
