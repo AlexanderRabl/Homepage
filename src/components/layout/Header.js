@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <div>
       <nav className="flex flex-wrap p-2 bg-gray-800 hidden lg:block">
-        <div>
+        <div className="text-end mr-10">
           <ul className="languages lg:flex-grow">
             {languages.map((lng) => (
-              <li className="inline-block mx-2" key={lng}>
+              <li className="inline-block uppercase mx-3 text-white hover:underline" key={lng}>
                 <Link to={originalPath} language={lng}>
                   {lng}
                 </Link>
@@ -19,7 +19,7 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <nav className="flex flex-wrap items-center justify-between p-4 bg-blue-500">
+      <nav className="flex flex-wrap items-center justify-between p-4 bg-primary">
         <div className="flex items-center flex-shrink-0 mr-6 text-white">
           <span className="text-xl font-semibold tracking-tight lg:ml-40">
             Alexander Rabl
@@ -77,11 +77,11 @@ const Header = () => {
               Contact
             </Link>
           </div>
-          <div className="lg:hidden">
-            <ul className="languages inline-block">
+          <div className="lg:hidden mr-10">
+            <ul className="languages inline-block flex flex-grow">
               {languages.map((lng) => (
                 <li key={lng}>
-                  <Link to={originalPath} className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white" language={lng}>
+                  <Link to={originalPath} className="block uppercase mt-4 mr-5 text-white inline-block lg:mt-0 hover:text-white hover:underline" language={lng}>
                     {lng}
                   </Link>
                 </li>

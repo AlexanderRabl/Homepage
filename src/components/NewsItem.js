@@ -12,7 +12,7 @@ const NewsItem = ({ slug, title, description, author, publishedDate, imageData, 
             <div className="p-6">
                 <div>
                     {tags.map((tag) => (
-                        <span className="text-xs font-medium text-blue-600 uppercase mr-3">{tag}</span>
+                        <span className="text-xs font-medium text-primary uppercase mr-3">{tag}</span>
                     ))}
                     <Link to={link} className="block mt-2 text-2xl font-semibold text-gray-800 transition-colors duration-200 transform hover:text-gray-600 hover:underline">{title}</Link>
                     <p className="mt-2 text-sm text-gray-600">{description}</p>
