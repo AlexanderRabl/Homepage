@@ -1,27 +1,49 @@
 import React from 'react';
+import { graphql } from 'gatsby'
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
-const Footer = () => (
-  <footer className="bg-gray-800">
-    <div className="container px-6 py-8 mx-auto">
-      <div className="text-center">
-        <a href="#" className="text-2xl font-bold text-white hover:text-gray-300">Steuerberatung Alexander Rabl</a>
-      </div>
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
 
-      <hr className="my-10 border-gray-700" />
+const Footer = () => {
+  const { t } = useTranslation();
 
-      <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-        <p className="text-sm text-gray-400">© Copyright 2021. All Rights Reserved.</p>
+  return (
+    <footer className="bg-gray-800">
+      <div className="container px-6 py-8 mx-auto">
+        <div className="text-center">
+          <a href="#" className="text-2xl font-bold text-white hover:text-gray-300">Steuerberatung Alexander Rabl</a>
+        </div>
 
-        <div className="flex mt-3 -mx-2 sm:mt-0">
-          <a href="#" className="mx-2 text-sm hover:text-gray-300" aria-label="Reddit"> AAB </a>
+        <hr className="my-10 border-gray-700" />
 
-          <a href="#" className="mx-2 text-sm hover:text-gray-300" aria-label="Reddit"> Privacy </a>
+        <div className="flex flex-col items-center sm:flex-row sm:justify-between">
+          <p className="text-sm text-gray-400">© Copyright 2022. All Rights Reserved.</p>
 
-          <a href="#" className="mx-2 text-sm hover:text-gray-300" aria-label="Reddit"> Cookies </a>
+          <div className="flex mt-3 -mx-2 sm:mt-0">
+            <Link to="#" className="mx-2 text-sm text-primary-500 hover:underline" aria-label="Reddit">AAB</Link>
+
+            <Link to="#" className="mx-2 text-sm text-primary-500 hover:underline" aria-label="Reddit">Privacy</Link>
+
+            <Link to="#" className="mx-2 text-sm text-primary-500 hover:underline" aria-label="Reddit">Cookies</Link>
+
+            <Link to="/legal-notice" className="mx-2 text-sm text-primary-500 hover:underline" aria-label={t("LegalNotice")}><Trans>LegalNotice</Trans></Link>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+}
 
 export default Footer;
