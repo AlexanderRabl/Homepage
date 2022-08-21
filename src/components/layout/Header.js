@@ -19,13 +19,13 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <nav className="flex flex-wrap items-center justify-between p-4 bg-primary-700">
-        <div className="flex items-center flex-shrink-0 mr-6 text-white">
+      <nav className="flex flex-wrap items-center justify-between bg-primary-700">
+        <div className="flex items-center flex-shrink-0 mr-6 px-4 text-white">
           <Link to="/" className="text-xl font-semibold tracking-tight lg:ml-40">
             Alexander Rabl
           </Link>
         </div>
-        <div className="block lg:hidden">
+        <div className="block lg:hidden p-4">
           <button
             onClick={() => toggleExpansion(!isExpanded)}
             className="flex items-center px-3 py-2 text-white border border-white rounded hover:text-white hover:border-white"
@@ -44,11 +44,11 @@ const Header = () => {
           className={`${isExpanded ? `block` : `hidden`
             } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
         >
-          <div className="text-md lg:flex-grow">
+          <div className="text-md lg:flex-grow px-4 pb-4">
             <Link
               to={`/`}
               href="#responsive-header"
-              className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+              className="block mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
             >
               Home
             </Link>
@@ -77,11 +77,11 @@ const Header = () => {
               Contact
             </Link>
           </div>
-          <div className="lg:hidden mr-10">
+          <div className="lg:hidden p-4 bg-gray-800">
             <ul className="languages inline-block flex flex-grow">
               {languages.map((lng) => (
                 <li key={lng}>
-                  <Link to={originalPath} className="block uppercase mt-4 mr-5 text-white inline-block lg:mt-0 hover:text-white hover:underline" language={lng}>
+                  <Link to={originalPath} className="block uppercase mr-5 text-white inline-block lg:mt-0 hover:text-white hover:underline" language={lng}>
                     {lng}
                   </Link>
                 </li>
