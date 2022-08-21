@@ -25,8 +25,8 @@ const Contact = () => {
             <PageHeader><Trans>Impressum</Trans></PageHeader>
             <section id="legalNotice" className="py-10 lg:py-20">
                 <div className="container mx-auto px-8 tracking-wider">
-                    <h1 className="text-lg lg:text-2xl font-semibold"><Trans>LegalNoticeHeader</Trans></h1>
-                    <p className="text-md lg:text-lg my-3" style={{ whiteSpace: "pre-line" }}><Trans>LegalNoticeAlex</Trans></p>
+                    <h1 className="text-lg lg:text-3xl font-semibold mb-8"><Trans>LegalNoticeHeader</Trans></h1>
+                    <p className="text-md lg:text-lg my-3 font-semibold" style={{ whiteSpace: "pre-line" }}><Trans>LegalNoticeAlex</Trans></p>
                     <p className="text-md lg:text-lg  my-3" style={{ whiteSpace: "pre-line" }}><Trans>LegalNoticeAddress</Trans></p>
                     <p className="text-md lg:text-lg  my-3" style={{ whiteSpace: "pre-line" }}><Trans>LegalNoticeContact</Trans></p>
                     <p className="text-md lg:text-lg  my-3" style={{ whiteSpace: "pre-line" }}><Trans>LegalNoticePlace</Trans></p>

@@ -85,12 +85,12 @@ const ContentfulPost = props => {
   return (
     <Layout>
       <section className="pt-20 md:pt-40">
-        <div className="container mx-auto px-8 lg:flex">
+        <div className="container mx-auto px-8 lg:px-20 lg:flex">
           <div className="text-center lg:text-left lg:w-2/3">
-            <h1 className="text-4xl lg:text-5xl font-bold leading-none">
+            <h1 className="text-4xl lg:text-4xl font-bold leading-none">
               {props.data.contentfulNewsPost.title}
             </h1>
-            <p className="text-xl lg:text-2xl mt-6 font-light">
+            <p className="text-2xl lg:text-2xl mt-6 font-light">
               {props.data.contentfulNewsPost.subtitle}
             </p>
             <p className="mt-4 text-gray-600">{props.data.contentfulNewsPost.author}, {props.data.contentfulNewsPost.published}</p>
@@ -101,7 +101,7 @@ const ContentfulPost = props => {
         </div>
       </section>
       <section className="my-10">
-        <div className="container mx-auto px-8 tracking-wider">
+        <div className="px-8 container mx-auto lg:px-40 tracking-wider">
           {
             renderRichText(
               props.data.contentfulNewsPost.body, options
