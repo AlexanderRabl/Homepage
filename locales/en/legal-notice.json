@@ -1,9 +1,11 @@
 {
     "LegalNotice": "Legal Notice",
     "LegalNoticeHeader": "Legal notice and disclosure pursuant to § 25 MedienG (Austrian Media Law) and § 5 E-Commerce-Gesetz (Austrian E-Commerce-Law)",
-    "LegalNoticeAlex": "Alexander Rabl\nCertified Tax Advisor (Steuerberater)",
+    "LegalNoticeAlex": "Alexander Rabl",
+    "LegalNoticeAlexTitle": "Certified Tax Advisor (Steuerberater)",
     "LegalNoticeAddress": "Zwerngasse 37\n1170 Wien\nAustria",
-    "LegalNoticeContact": "Phone: +43 660 284 27 84\nE-mail: office@rabl-tax.at\nContact form",
+    "LegalNoticeContact": "Phone: +43 660 284 27 84\nE-mail: office@rabl-tax.at",
+    "LegalNoticeContactLink": "Contact form",
     "LegalNoticePlace": "Place of business: Vienna, Austria",
     "LegalNoticePurpose": "Business purpose: Tax advisory",
     "LegalNoticeVAT": "VAT number: ATU????????",

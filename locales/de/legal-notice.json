@@ -1,9 +1,11 @@
 {
     "LegalNotice": "Impressum",
     "LegalNoticeHeader": "Impressum und Informationspflicht gemäß § 25 Mediengesetz und § 5 E-Commerce-Gesetz",
-    "LegalNoticeAlex": "Mag. Alexander Rabl\nSteuerberater",
+    "LegalNoticeAlex": "Mag. Alexander Rabl",
+    "LegalNoticeAlexTitle": "Steuerberater",
     "LegalNoticeAddress": "Zwerngasse 37\n1170 Wien\nÖsterreich",
-    "LegalNoticeContact": "Tel.: +43 660 284 27 84\nE-Mail: office@rabl-tax.at\nKontaktformular",
+    "LegalNoticeContact": "Tel.: +43 660 284 27 84\nE-Mail: office@rabl-tax.at",
+    "LegalNoticeContactLink": "Kontaktformular",
     "LegalNoticePlace": "Unternehmenssitz: Wien, Österreich",
     "LegalNoticePurpose": "Unternehmensgegenstand: Steuerberatung",
     "LegalNoticeVAT": "Umsatzsteuer-Identifikationsnummer (UID): ATU????????",
