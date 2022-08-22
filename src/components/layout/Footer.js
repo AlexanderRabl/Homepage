@@ -32,11 +32,11 @@ const Footer = () => {
           <p className="text-sm text-gray-400">© Copyright 2022. All Rights Reserved.</p>
 
           <div className="flex mt-3 -mx-2 sm:mt-0">
-            <Link to="#" className="mx-2 text-sm text-primary-500 hover:underline" aria-label="Reddit">AAB</Link>
+            <a href={t("AABLink")} target="_blank" rel="noreferrer" className="mx-2 text-sm text-primary-500 hover:underline" aria-label="AAB">AAB</a>
 
             <Link to="#" className="mx-2 text-sm text-primary-500 hover:underline" aria-label="Reddit">Privacy</Link>
 
-            <Link to="#" className="mx-2 text-sm text-primary-500 hover:underline" aria-label="Reddit">Cookies</Link>
+            <Link to="/AAB_2018_en.pdf" target={"_blank"} rel="noreferrer" className="mx-2 text-sm text-primary-500 hover:underline" aria-label="Reddit">Cookies</Link>
 
             <Link to="/legal-notice" className="mx-2 text-sm text-primary-500 hover:underline" aria-label={t("LegalNotice")}><Trans>LegalNotice</Trans></Link>
           </div>
