@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby'
 import Layout from '../components/layout/Layout';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from "gatsby-plugin-image"
 import PageHeader from '../components/PageHeader';
 
@@ -33,22 +34,22 @@ const About = () => {
                         <ol class="relative border-l-4 border-primary-700">
                             <li class="mb-10 ml-6">
                                 <span class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary-700 rounded-full ring-8 ring-white"></span>
-                                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Auslandssemester an der Università Commerciale Luigi Bocconi in Mailand</h3>
+                                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900"><Trans>AboutTimeline2010</Trans></h3>
                                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2010</time>
                             </li>
                             <li class="mb-10 ml-6">
                                 <span class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary-700 rounded-full ring-8 ring-white"></span>
-                                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Abschluss Studium „Internationale Betriebswirtschaft“ an der WU Wien</h3>
+                                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900"><Trans>AboutTimeline2012</Trans></h3>
                                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2012</time>
                             </li>
                             <li class="mb-10 ml-6">
                                 <span class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary-700 rounded-full ring-8 ring-white"></span>
-                                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Abschluss Diplom Personalverrechnung</h3>
+                                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900"><Trans>AboutTimeline2017</Trans></h3>
                                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2017</time>
                             </li>
                             <li class="mb-10 ml-6">
                                 <span class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary-700 rounded-full ring-8 ring-white"></span>
-                                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Bestellung zum Steuerberater</h3>
+                                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900"><Trans>AboutTimeline2022</Trans></h3>
                                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2022</time>
                             </li>
                         </ol>
