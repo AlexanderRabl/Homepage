@@ -25,7 +25,7 @@ export const query = graphql`
       image {
         gatsbyImageData
       }
-    tags
+      tags
     }
     locales: allLocale(filter: {language: {eq: $language}}) {
       edges {
@@ -103,8 +103,15 @@ const ContentfulPost = props => {
 
   return (
     <Layout>
-      <section className="px-8 container mx-auto lg:px-40 tracking-wider my-20">
+      <section className="px-8 container mx-auto lg:px-40 tracking-wider mb-20">
         <div className="my-10">
+          <div className="my-5 flex flex-wrap">
+            {props.data.contentfulNewsPost.tags.map((tag) => (
+              <span className="mr-2 mb-1 px-2 py-1 rounded text-primary-700 text-sm border border-primary-700 font-medium">
+                {tag}
+              </span>
+            ))}
+          </div>
           <GatsbyImage className="object-cover w-full h-30 md:h-40 lg:h-60 mb-10" image={props.data.contentfulNewsPost.image.gatsbyImageData} alt="News Image" />
           <h1 className="text-4xl lg:text-4xl font-bold leading-none">
             {props.data.contentfulNewsPost.title}
