@@ -5,6 +5,7 @@ import Layout from '../components/layout/Layout';
 import PageHeader from '../components/PageHeader';
 import HeroImage from '../svg/HeroImage';
 import NewsItemMini from '../components/NewsItemMini';
+import NewsItemMiniV2 from '../components/NewsItemMiniV2';
 
 // export const query = graphql`
 //   query($language: String!) {
@@ -45,7 +46,7 @@ const Index = () => {
 
   const allArticles = articles.allContentfulNewsPost.edges.map((item, index) => (
     <div className="flex-1 px-3">
-      <NewsItemMini
+      <NewsItemMiniV2
         key={index}
         slug={item.node.slug}
         title={item.node.title}

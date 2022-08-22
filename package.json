@@ -13,6 +13,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.0",
     "autoprefixer": "^10.4.8",
     "gatsby": "^4.0.0",
     "gatsby-image": "^3.11.0",
