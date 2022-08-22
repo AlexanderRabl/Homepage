@@ -5,44 +5,39 @@ import LabelText from '../components/LabelText';
 import NewsItem from "../components/NewsItem"
 import PageHeader from '../components/PageHeader';
 
-// export const query = graphql`
-//   query($language: String!) {
-//     locales: allLocale(filter: {language: {eq: $language}}) {
-//       edges {
-//         node {
-//           ns
-//           data
-//           language
-//         }
-//       }
-//     }
-//   }
-// `;
-
-const News = () => {
-    const articles = useStaticQuery(graphql`
-    {
-        allContentfulNewsPost(sort: {fields: published, order: DESC}) {
-            edges {
-              node {
-                slug
-                title
-                description {
-                  description
-                }
-                published(formatString: "DD.MM.YYYY")
-                author
-                image {
-                    gatsbyImageData(width: 600)
-                }
-                tags
-              }
-            }
+export const query = graphql`
+query ($language: String!) {
+    allContentfulNewsPost(sort: {fields: published, order: DESC}) {
+      edges {
+        node {
+          slug
+          title
+          description {
+            description
           }
+          published(formatString: "DD.MM.YYYY")
+          author
+          image {
+            gatsbyImageData(width: 600)
+          }
+          tags
         }
-    `)
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+}
+`;
 
-    const allArticles = articles.allContentfulNewsPost.edges.map((item, index) => (
+const News = ({data}) => {
+    const allArticles = data.allContentfulNewsPost.edges.map((item, index) => (
         <div className="flex-1 px-3">
             <NewsItem
                 key={index}

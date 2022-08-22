@@ -3,20 +3,6 @@ import Button from './Button';
 import { graphql } from 'gatsby'
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
-export const query = graphql`
-  query($language: String!) {
-    locales: allLocale(filter: {language: {eq: $language}}) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-  }
-`;
-
 const PageHeader = ({ children }) => {
   const { t } = useTranslation();
   return (
