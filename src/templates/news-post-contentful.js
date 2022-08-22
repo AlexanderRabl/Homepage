@@ -3,13 +3,14 @@ import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 
 import Layout from "../components/layout/Layout"
 import HeroImage from "../svg/HeroImage"
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $language: String!) {
     contentfulNewsPost(slug: { eq: $slug }) {
       title
       subtitle
@@ -17,6 +18,19 @@ export const query = graphql`
       published(formatString: "DD.MM.YYYY")
       body {
         raw
+      }
+      image {
+        gatsbyImageData
+      }
+    tags
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
   }
@@ -28,7 +42,7 @@ const ContentfulPost = props => {
       [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
     },
     renderNode: {
-      [BLOCKS.PARAGRAPH]: (node, children) => <p className="text-lg">{children}</p>,
+      [BLOCKS.PARAGRAPH]: (node, children) => <p className="text-lg py-2 md:text-justify">{children}</p>,
       [INLINES.HYPERLINK]: (node, children) => {
         const { uri } = node.data
         return (
@@ -84,24 +98,26 @@ const ContentfulPost = props => {
 
   return (
     <Layout>
-      <section className="pt-20 md:pt-40">
-        <div className="container mx-auto px-8 lg:px-20 lg:flex">
-          <div className="text-center lg:text-left lg:w-2/3">
-            <h1 className="text-4xl lg:text-4xl font-bold leading-none">
-              {props.data.contentfulNewsPost.title}
-            </h1>
-            <p className="text-2xl lg:text-2xl mt-6 font-light">
-              {props.data.contentfulNewsPost.subtitle}
-            </p>
-            <p className="mt-4 text-gray-600">{props.data.contentfulNewsPost.author}, {props.data.contentfulNewsPost.published}</p>
-          </div>
-          <div className="lg:w-1/3">
-            <HeroImage />
+      <section className="px-8 container mx-auto lg:px-40 tracking-wider my-20">
+        <div className="my-10">
+          <GatsbyImage className="object-cover w-full h-30 md:h-40 lg:h-60 mb-10" image={props.data.contentfulNewsPost.image.gatsbyImageData} alt="News Image" />
+          <h1 className="text-4xl lg:text-4xl font-bold leading-none">
+            {props.data.contentfulNewsPost.title}
+          </h1>
+          <p className="text-2xl lg:text-2xl mt-6 font-light">
+            {props.data.contentfulNewsPost.subtitle}
+          </p>
+          <div className="my-4">
+            <div className="flex items-center">
+              <div className="flex items-center">
+                <StaticImage className="object-cover w-10 h-10 rounded-full" src="./../images/PortraitfotoMini.jpg" alt="Avatar" />
+                <Link to="/about" className="mx-2 font-semibold text-gray-700">{props.data.contentfulNewsPost.author}</Link>
+              </div>
+              <span className="mx-1 text-xs text-gray-600">{props.data.contentfulNewsPost.published}</span>
+            </div>
           </div>
         </div>
-      </section>
-      <section className="my-10">
-        <div className="px-8 container mx-auto lg:px-40 tracking-wider">
+        <div className="">
           {
             renderRichText(
               props.data.contentfulNewsPost.body, options
