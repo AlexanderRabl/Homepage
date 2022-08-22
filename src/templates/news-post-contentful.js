@@ -7,7 +7,7 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 
 import Layout from "../components/layout/Layout"
-import HeroImage from "../svg/HeroImage"
+import ShareButtons from "../components/ShareButtons"
 
 export const query = graphql`
   query($slug: String!, $language: String!) {
@@ -15,6 +15,9 @@ export const query = graphql`
       title
       subtitle
       author
+      description {
+        description
+      }
       published(formatString: "DD.MM.YYYY")
       body {
         raw
@@ -96,6 +99,8 @@ const ContentfulPost = props => {
     },
   }
 
+  const url = typeof window !== 'undefined' ? window.location.href : '';
+
   return (
     <Layout>
       <section className="px-8 container mx-auto lg:px-40 tracking-wider my-20">
@@ -124,6 +129,7 @@ const ContentfulPost = props => {
             )
           }
         </div>
+        <ShareButtons url={url} title={props.data.contentfulNewsPost.title} description={props.data.contentfulNewsPost.description.description} />
       </section>
     </Layout>
   )
