@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby'
 import Layout from '../components/layout/Layout';
 import Button from '../components/Button';
-import HeroImage from '../svg/HeroImage';
 import LostImage from '../svg/LostImage';
 import SplitSection from '../components/SplitSection';
 
