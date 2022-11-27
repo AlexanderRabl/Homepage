@@ -19,7 +19,7 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <nav className="flex flex-wrap items-center justify-between bg-primary-700 w-full">
+      <nav className="flex flex-wrap items-center justify-between bg-primary-300 w-full">
         <div className="flex items-center flex-shrink-0 mr-6 px-4 text-white">
           <Link to="/" className="text-xl font-semibold tracking-tight lg:ml-40">
             Alexander Rabl

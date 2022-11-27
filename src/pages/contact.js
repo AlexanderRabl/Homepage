@@ -31,7 +31,7 @@ const Contact = () => {
           <div className="flex flex-col justify-between">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight"><Trans>Contact</Trans></h2>
-              <div className="text-gray-700 mt-8">
+              <div className="text-gray-300 mt-8">
                 <Trans>ContactText</Trans>
               </div>
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left mt-10">

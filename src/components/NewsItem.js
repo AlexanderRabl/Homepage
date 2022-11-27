@@ -22,7 +22,7 @@ const NewsItem = ({ slug, title, description, author, publishedDate, imageData, 
                     <div className="flex items-center">
                         <div className="flex items-center">
                             <StaticImage className="object-cover w-10 h-10 rounded-full" src="./../images/PortraitfotoMini.jpg" alt="Avatar" />
-                            <Link to="/about" className="mx-2 font-semibold text-gray-700">{author}</Link>
+                            <Link to="/about" className="mx-2 font-semibold text-gray-300">{author}</Link>
                         </div>
                         <span className="mx-1 text-xs text-gray-600">{publishedDate}</span>
                     </div>

@@ -17,7 +17,7 @@ const Button = ({ children, className = '' }) => {
         transition-colors
         duration-200
         transform
-        bg-primary-700
+        bg-primary-300
         rounded-md
         hover:bg-primary-400
         focus:outline-none

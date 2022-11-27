@@ -78,7 +78,7 @@ const ContentfulPost = props => {
           <tbody>{children}</tbody>
         </table>
       ),
-      [BLOCKS.TABLE_ROW]: (node, children) => <tr className="text-gray-700">{children}</tr>,
+      [BLOCKS.TABLE_ROW]: (node, children) => <tr className="text-gray-300">{children}</tr>,
       [BLOCKS.TABLE_CELL]: (node, children) => <td className="border-b-2 p-4">{children}</td>,
       [BLOCKS.UL_LIST]: (node, children) => <ul className="list-disc p-4">{children}</ul>,
       [BLOCKS.OL_LIST]: (node, children) => <ol>{children}</ol>,
@@ -107,7 +107,7 @@ const ContentfulPost = props => {
         <div className="my-10">
           <div className="my-5 flex flex-wrap">
             {props.data.contentfulNewsPost.tags.map((tag) => (
-              <span className="mr-2 mb-1 px-2 py-1 rounded text-primary-700 text-sm border border-primary-700 font-medium">
+              <span className="mr-2 mb-1 px-2 py-1 rounded text-primary-300 text-sm border border-primary-300 font-medium">
                 {tag}
               </span>
             ))}
@@ -123,7 +123,7 @@ const ContentfulPost = props => {
             <div className="flex items-center">
               <div className="flex items-center">
                 <StaticImage className="object-cover w-10 h-10 rounded-full" src="./../images/PortraitfotoMini.jpg" alt="Avatar" />
-                <Link to="/about" className="mx-2 font-semibold text-gray-700">{props.data.contentfulNewsPost.author}</Link>
+                <Link to="/about" className="mx-2 font-semibold text-gray-300">{props.data.contentfulNewsPost.author}</Link>
               </div>
               <span className="mx-1 text-xs text-gray-600">{props.data.contentfulNewsPost.published}</span>
             </div>
