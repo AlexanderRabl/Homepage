@@ -1,12 +1,13 @@
 import React, { useState } from "react"
 import { Link, useI18next } from 'gatsby-plugin-react-i18next';
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => {
   const { languages, originalPath } = useI18next();
   const [isExpanded, toggleExpansion] = useState(false)
   return (
     <div>
-      <nav className="flex flex-wrap p-2 bg-gray-800 hidden lg:block w-full">
+      <nav className="flex flex-wrap bg-primary-800 p-2 hidden lg:block w-full">
         <div className="text-end mr-10">
           <ul className="languages lg:flex-grow">
             {languages.map((lng) => (
@@ -19,16 +20,16 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <nav className="flex flex-wrap items-center justify-between bg-primary-300 w-full">
-        <div className="flex items-center flex-shrink-0 mr-6 px-4 text-white">
-          <Link to="/" className="text-xl font-semibold tracking-tight lg:ml-40">
-            Josef Rabl
+      <nav className="flex flex-wrap items-center justify-between bg-white w-full">
+        <div className="flex items-center flex-shrink-0 mr-6 pr-4 text-navbar">
+          <Link to="/">
+            <StaticImage quality={100} class="lg:ml-10" src="./../../images/STEUERBERATUNG_NAVBAR.png" alt="logo" width={170}></StaticImage>
           </Link>
         </div>
-        <div className="block lg:hidden p-4">
+        <div className="block lg:hidden">
           <button
             onClick={() => toggleExpansion(!isExpanded)}
-            className="flex items-center px-3 py-2 text-white border border-white rounded hover:text-white hover:border-white"
+            className="flex items-center px-3 mr-2 py-2 text-navbar border border-navbar rounded hover:text-navbar uppercase hover:border-navbar"
           >
             <svg
               className="w-3 h-3 fill-current"
@@ -44,44 +45,44 @@ const Header = () => {
           className={`${isExpanded ? `block` : `hidden`
             } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
         >
-          <div className="text-md lg:flex-grow px-4 pb-4 lg:pt-4">
+          <div className="text-md lg:flex-grow px-4 pb-4 pt-4">
             <Link
               to={`/`}
               href="#responsive-header"
-              className="block mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+              className="block mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               Home
             </Link>
             <Link
               to={`/about`}
-              className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+              className="block mt-4 mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               About
             </Link>
             <Link
               to={`/services`}
-              className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+              className="block mt-4 mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               Services
             </Link>
             <Link
               to={`/news`}
-              className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+              className="block mt-4 mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               News
             </Link>
             <Link
               to={`/contact`}
-              className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+              className="block mt-4 mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               Contact
             </Link>
           </div>
-          <div className="lg:hidden p-4 bg-gray-800">
+          <div className="lg:hidden p-4 bg-primary-800">
             <ul className="languages inline-block flex flex-grow">
               {languages.map((lng) => (
                 <li key={lng}>
-                  <Link to={originalPath} className="block uppercase mr-5 text-white inline-block lg:mt-0 hover:text-white hover:underline" language={lng}>
+                  <Link to={originalPath} className="block uppercase mr-5 text-white inline-block lg:mt-0 hover:text-navbar uppercase hover:underline" language={lng}>
                     {lng}
                   </Link>
                 </li>

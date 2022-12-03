@@ -6,7 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['"Inter"',
+      sans: ['"MD Sans"',
+        '"Inter"',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
@@ -36,6 +37,7 @@ module.exports = {
           '800': '#253449',
           '900': '#121A24'
         },
+        "navbar": "#717C7D"
       },
     },
   },
