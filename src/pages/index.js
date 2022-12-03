@@ -53,12 +53,12 @@ const Index = ({data}) => {
 
   return (
     <Layout>
-      <PageHeader>Alexander Rabl</PageHeader>
+      <PageHeader>Josef Rabl</PageHeader>
       <section className="pt-20 md:pt-40">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-              Alexander Rabl - Steuerberatung
+              Josef Rabl - Steuerberatung
             </h1>
             <p className="text-xl lg:text-2xl mt-6 font-light">
               An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio velna vitae auctor integer.

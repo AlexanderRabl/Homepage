@@ -35,7 +35,7 @@ const Contact = () => {
                 <Trans>ContactText</Trans>
               </div>
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left mt-10">
-                <StaticImage className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="./../images/PortraitfotoContact.jpg" alt="Alexander Rabl Portrait" />
+                <StaticImage className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="./../images/PortraitfotoContact.jpg" alt="Josef Rabl Portrait" />
                 <div className="flex-grow sm:pl-8">
                   <h2 className="title-font font-medium text-lg text-gray-900"><Trans>ContactAlex</Trans></h2>
                   <h3 className="text-gray-500 mb-3"><Trans>ContactTitle</Trans></h3>

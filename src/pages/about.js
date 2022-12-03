@@ -28,7 +28,7 @@ const About = () => {
                     className="mt-3 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-600">
                     
                     <div>
-                        <StaticImage className="object-cover object-center rounded-lg md:mt-0 mt-12 lg:w-2/3" src="./../images/Portraitfoto.jpg" alt="Alexander Rabl Portrait" />
+                        <StaticImage className="object-cover object-center rounded-lg md:mt-0 mt-12 lg:w-2/3" src="./../images/Portraitfoto.jpg" alt="Josef Rabl Portrait" />
                     </div>
                     <div className="flex flex-col justify-between">
                         <ol class="relative border-l-4 border-primary-300">
