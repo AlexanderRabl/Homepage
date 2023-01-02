@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from "gatsby-plugin-image"
+import NavLink from "./NavLink";
 
 const Header = () => {
-  const { languages, originalPath } = useI18next();
+  const { languages, originalPath, i18n } = useI18next();
   const [isExpanded, toggleExpansion] = useState(false)
   return (
     <div>
@@ -11,7 +12,7 @@ const Header = () => {
         <div className="text-end mr-10">
           <ul className="languages lg:flex-grow">
             {languages.map((lng) => (
-              <li className="inline-block uppercase mx-3 text-white hover:underline" key={lng}>
+              <li className={`inline-block uppercase mx-3 text-white hover:underline ${i18n.resolvedLanguage === lng ? 'font-bold' : ''}`} key={lng}>
                 <Link to={originalPath} language={lng}>
                   {lng}
                 </Link>
@@ -46,43 +47,37 @@ const Header = () => {
             } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
         >
           <div className="text-md lg:flex-grow px-4 pb-4 pt-4">
-            <Link
+            <NavLink
               to={`/`}
-              href="#responsive-header"
-              className="block mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               Home
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to={`/about`}
-              className="block mt-4 mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               About
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to={`/services`}
-              className="block mt-4 mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               Services
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to={`/news`}
-              className="block mt-4 mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               News
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to={`/contact`}
-              className="block mt-4 mr-4 text-navbar lg:inline-block lg:mt-0 hover:text-navbar uppercase"
             >
               Contact
-            </Link>
+            </NavLink>
           </div>
           <div className="lg:hidden p-4 bg-primary-800">
             <ul className="languages inline-block flex flex-grow">
               {languages.map((lng) => (
                 <li key={lng}>
-                  <Link to={originalPath} className="block uppercase mr-5 text-white inline-block lg:mt-0 hover:text-navbar uppercase hover:underline" language={lng}>
+                  <Link to={originalPath} className={`block uppercase mr-5 text-white inline-block lg:mt-0 hover:text-navbar uppercase hover:underline ${i18n.resolvedLanguage === lng ? 'font-bold' : ''}`} language={lng}>
                     {lng}
                   </Link>
                 </li>

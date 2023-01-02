@@ -13,6 +13,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^6.2.0",
     "@tailwindcss/line-clamp": "^0.4.0",
     "autoprefixer": "^10.4.8",
     "gatsby": "^4.0.0",

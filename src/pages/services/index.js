@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../../components/layout/Layout';
 import SplitSection from '../../components/SplitSection';
 import SvgCharts from '../../svg/SvgCharts';
-import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation, Link } from 'gatsby-plugin-react-i18next';
 import PageHeader from '../../components/PageHeader';
 
 export const query = graphql`
@@ -22,7 +22,7 @@ export const query = graphql`
 
 const Services = () => {
   const { t } = useTranslation();
-  return(
+  return (
     <Layout>
       <PageHeader>Services</PageHeader>
       <SplitSection
@@ -31,10 +31,10 @@ const Services = () => {
           <div className="lg:pr-32 xl:pr-48">
             <h3 className="text-3xl font-semibold leading-tight">Steuerberatung</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-            <Trans>Test1</Trans>
-            <br></br>
-            <br></br>
-            <Trans>Test1</Trans>
+              <Trans>Test1</Trans>
+              <br></br>
+              <br></br>
+              <Trans>Test1</Trans>
             </p>
           </div>
         }
@@ -103,12 +103,16 @@ const Services = () => {
         primarySlot={
           <div className="lg:pl-32 xl:pl-48">
             <h3 className="text-3xl font-semibold leading-tight">
-              Internationale Steuern
+              <Trans>SubsidiesHeader</Trans>
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Once the market analysis process is completed our staff will search for opportunities
-              that are in reach
+              <Trans>SubsidiesTeaser</Trans>
             </p>
+            <div className="mt-8">
+              <Link to={`/services/subsidies`} className="underline font-semibold">
+                Mehr erfahren
+              </Link>
+            </div>
           </div>
         }
         secondarySlot={<SvgCharts />}
