@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link, useI18next } from 'gatsby-plugin-react-i18next';
+import { Link, useI18next, Trans } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from "gatsby-plugin-image"
 import NavLink from "./NavLink";
 
@@ -50,27 +50,27 @@ const Header = () => {
             <NavLink
               to={`/`}
             >
-              Home
+              <Trans>Home</Trans>
             </NavLink>
             <NavLink
               to={`/about`}
             >
-              About
+              <Trans>About</Trans>
             </NavLink>
             <NavLink
               to={`/services`}
             >
-              Services
+              <Trans>Services</Trans>
             </NavLink>
             <NavLink
               to={`/news`}
             >
-              News
+              <Trans>News</Trans>
             </NavLink>
             <NavLink
               to={`/contact`}
             >
-              Contact
+              <Trans>Contact</Trans>
             </NavLink>
           </div>
           <div className="lg:hidden p-4 bg-primary-800">

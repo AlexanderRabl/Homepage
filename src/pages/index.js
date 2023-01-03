@@ -6,6 +6,7 @@ import PageHeader from '../components/PageHeader';
 import HeroImage from '../svg/HeroImage';
 import NewsItemMini from '../components/NewsItemMini';
 import NewsItemMiniV2 from '../components/NewsItemMiniV2';
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 export const query = graphql`
 query ($language: String!) {
@@ -53,12 +54,11 @@ const Index = ({data}) => {
 
   return (
     <Layout>
-      <PageHeader>Josef Rabl</PageHeader>
-      <section className="pt-20 md:pt-40">
+      <section className="pt-20">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-              Josef Rabl - Steuerberatung
+            <Trans>PageTitle</Trans>
             </h1>
             <p className="text-xl lg:text-2xl mt-6 font-light">
               An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio velna vitae auctor integer.
@@ -73,7 +73,7 @@ const Index = ({data}) => {
           </div>
         </div>
       </section>
-      <section id="features" className="py-20 lg:pb-40 lg:pt-48">
+      <section id="features" className="py-20 px-10 lg:pt-48">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">Services</h2>
           <p className="mt-4 text-gray-500 xl:mt-6">
@@ -190,13 +190,13 @@ const Index = ({data}) => {
                 </svg>
               </span>
 
-              <h1 className="text-2xl font-semibold text-gray-300 capitalize">Internationale Steuern</h1>
+              <h1 className="text-2xl font-semibold text-gray-800 capitalize"><Trans>SubsidiesHeader</Trans></h1>
 
               <p className="text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+              <Trans>SubsidiesTeaser</Trans>
               </p>
 
-              <a href="#" className="inline-flex p-2 text-white capitalize transition-colors duration-200 transform bg-primary-100 rounded-full hover:underline hover:text-primary-900">
+              <a href="#" className="inline-flex p-2 text-white capitalize transition-colors duration-200 transform bg-primary-300 rounded-full hover:underline hover:bg-primary-500">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -205,7 +205,7 @@ const Index = ({data}) => {
           </div>
         </div>
       </section>
-      <section id="news" className="py-20 lg:py-40">
+      <section id="news" className="py-20">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">News</h2>
           <p className="mt-4 text-gray-500 xl:mt-6">

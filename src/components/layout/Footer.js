@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-gray-800">
       <div className="container px-6 py-8 mx-auto">
         <div className="text-center">
-          <a href="#" className="text-2xl font-bold text-white hover:text-gray-300">Steuerberatung Josef Rabl</a>
+          <a href="#" className="text-2xl font-bold text-white hover:text-gray-300"><Trans>PageTitle</Trans></a>
         </div>
 
         <hr className="my-10 border-gray-300" />

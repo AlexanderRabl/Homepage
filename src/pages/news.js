@@ -54,7 +54,7 @@ const News = ({data}) => {
     return (
         <Layout>
             <PageHeader>News</PageHeader>
-            <section id="news" className="py-20 lg:py-40">
+            <section id="news" className="py-10">
                 <div className="container mx-auto">
                     <LabelText className="mb-8 text-gray-600 text-center">Latest News</LabelText>
                     <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
