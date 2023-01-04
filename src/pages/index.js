@@ -54,7 +54,7 @@ const Index = ({data}) => {
 
   return (
     <Layout>
-      <section className="pt-20">
+      <section className="pt-20 mt-24">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">

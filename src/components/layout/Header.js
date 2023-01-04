@@ -2,12 +2,13 @@ import React, { useState } from "react"
 import { Link, useI18next, Trans } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from "gatsby-plugin-image"
 import NavLink from "./NavLink";
+import LogoBanner from "../../svg/LogoBanner";
 
 const Header = () => {
   const { languages, originalPath, i18n } = useI18next();
   const [isExpanded, toggleExpansion] = useState(false)
   return (
-    <div>
+    <header className="fixed w-full z-50 top-0">
       <nav className="flex flex-wrap bg-primary-800 p-2 hidden lg:block w-full">
         <div className="text-end mr-10">
           <ul className="languages lg:flex-grow">
@@ -24,7 +25,7 @@ const Header = () => {
       <nav className="flex flex-wrap items-center justify-between bg-white w-full">
         <div className="flex items-center flex-shrink-0 mr-6 pr-4 text-navbar">
           <Link to="/">
-            <StaticImage quality={100} class="lg:ml-10" src="./../../images/STEUERBERATUNG_NAVBAR.png" alt="logo" width={170}></StaticImage>
+            <LogoBanner width={172} />
           </Link>
         </div>
         <div className="block lg:hidden">
@@ -86,7 +87,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   )
 };
 
