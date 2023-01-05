@@ -24,18 +24,40 @@ const Services = () => {
   const { t } = useTranslation();
   return (
     <Layout>
-      <PageHeader>Services</PageHeader>
+      <PageHeader><Trans>Services</Trans></PageHeader>
       <SplitSection
-        id="services"
+        reverseOrder
+        primarySlot={
+          <div className="lg:pl-32 xl:pl-48">
+            <h3 className="text-3xl font-semibold leading-tight">
+              <Trans>FAaTRHeader</Trans>
+            </h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              <Trans>FAaTRTeaser</Trans>
+            </p>
+            <div className="mt-8">
+              <Link to={`/services/subsidies`} className="underline font-semibold">
+                Mehr erfahren
+              </Link>
+            </div>
+          </div>
+        }
+        secondarySlot={<SvgCharts />}
+      />
+      <SplitSection
         primarySlot={
           <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">Steuerberatung</h3>
+            <h3 className="text-3xl font-semibold leading-tight">
+              <Trans>TaxAdvisoryHeader</Trans>
+            </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              <Trans>Test1</Trans>
-              <br></br>
-              <br></br>
-              <Trans>Test1</Trans>
+              <Trans>TaxAdvisoryTeaser</Trans>
             </p>
+            <div className="mt-8">
+              <Link to={`/services/subsidies`} className="underline font-semibold">
+                Mehr erfahren
+              </Link>
+            </div>
           </div>
         }
         secondarySlot={<SvgCharts />}
@@ -45,12 +67,16 @@ const Services = () => {
         primarySlot={
           <div className="lg:pl-32 xl:pl-48">
             <h3 className="text-3xl font-semibold leading-tight">
-              Unternehmensgründung
+              <Trans>InternationalTaxHeader</Trans>
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Once the market analysis process is completed our staff will search for opportunities
-              that are in reach
+              <Trans>InternationalTaxTeaser</Trans>
             </p>
+            <div className="mt-8">
+              <Link to={`/services/subsidies`} className="underline font-semibold">
+                Mehr erfahren
+              </Link>
+            </div>
           </div>
         }
         secondarySlot={<SvgCharts />}
@@ -59,12 +85,16 @@ const Services = () => {
         primarySlot={
           <div className="lg:pr-32 xl:pr-48">
             <h3 className="text-3xl font-semibold leading-tight">
-              Jahresabschluss & Steuererklärungen
+              <Trans>StartUpsHeader</Trans>
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              With all the information in place you will be presented with an action plan that your
-              company needs to follow
+              <Trans>StartUpsTeaser</Trans>
             </p>
+            <div className="mt-8">
+              <Link to={`/services/subsidies`} className="underline font-semibold">
+                Mehr erfahren
+              </Link>
+            </div>
           </div>
         }
         secondarySlot={<SvgCharts />}
@@ -74,32 +104,21 @@ const Services = () => {
         primarySlot={
           <div className="lg:pl-32 xl:pl-48">
             <h3 className="text-3xl font-semibold leading-tight">
-              Buchhaltung
+              <Trans>SocialSecurityHeader</Trans>
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Once the market analysis process is completed our staff will search for opportunities
-              that are in reach
+              <Trans>SocialSecurityTeaser</Trans>
             </p>
+            <div className="mt-8">
+              <Link to={`/services/subsidies`} className="underline font-semibold">
+                Mehr erfahren
+              </Link>
+            </div>
           </div>
         }
         secondarySlot={<SvgCharts />}
       />
       <SplitSection
-        primarySlot={
-          <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              Personalverrechnung
-            </h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              With all the information in place you will be presented with an action plan that your
-              company needs to follow
-            </p>
-          </div>
-        }
-        secondarySlot={<SvgCharts />}
-      />
-      <SplitSection
-        reverseOrder
         primarySlot={
           <div className="lg:pl-32 xl:pl-48">
             <h3 className="text-3xl font-semibold leading-tight">

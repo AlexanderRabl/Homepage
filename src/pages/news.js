@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
+import { Trans, useTranslation, Link } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/layout/Layout';
 import LabelText from '../components/LabelText';
 import NewsItem from "../components/NewsItem"
@@ -53,7 +54,7 @@ const News = ({data}) => {
     ))
     return (
         <Layout>
-            <PageHeader>News</PageHeader>
+            <PageHeader><Trans>News</Trans></PageHeader>
             <section id="news" className="py-10">
                 <div className="container mx-auto">
                     <LabelText className="mb-8 text-gray-600 text-center">Latest News</LabelText>

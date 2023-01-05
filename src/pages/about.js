@@ -22,7 +22,7 @@ export const query = graphql`
 const About = () => {
     return (
         <Layout>
-            <PageHeader>About me</PageHeader>
+            <PageHeader><Trans>About</Trans></PageHeader>
             <section className="text-gray-600 body-font">
                 <div
                     className="mt-3 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-600">

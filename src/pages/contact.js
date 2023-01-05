@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import PageHeader from '../components/PageHeader';
 import Button from '../components/Button';
 import { Linkedin, Signal, Xing } from '@icons-pack/react-simple-icons';
+import MessageIcon from '../svg/MessageIcon';
 
 export const query = graphql`
   query($language: String!) {
@@ -43,13 +44,13 @@ const Contact = () => {
                   <p className="mb-4"><Trans>ContactTelephone</Trans>: +43 660 284 27 84</p>
                   <span className="inline-flex">
                     <a className="text-gray-500" target="_blank" href="https://www.linkedin.com/in/alexander-rabl/">
-                      <Linkedin color='#9BB8D3' />
+                      <Linkedin color='#9BB8D3' width={32} />
                     </a>
                     <a className="ml-5 text-gray-500" target="_blank" href="https://www.xing.com/profile/Alexander_Rabl22">
-                      <Xing color='#9BB8D3' />
+                      <Xing color='#9BB8D3' width={32} />
                     </a>
-                    <a className="ml-5 text-gray-500" href="sms:+43 660 284 27 84?body=Test">
-                      <Signal color='#9BB8D3' />
+                    <a className="ml-5 text-gray-500 -mt-1 lg:hidden" href="sms:+43 660 284 27 84?body=Test">
+                      <MessageIcon color='#9BB8D3' width={32} />
                     </a>
                   </span>
                 </div>

@@ -1,4 +1,19 @@
 {
+    "FAaTRHeader": "Jahresabschlüsse und Steuererklärungen",
+    "FAaTRTeaser": "Jahresabschlüsse und Steuererklärungen Teaser",
+
+    "TaxAdvisoryHeader": "Steuerberatung",
+    "TaxAdvisoryTeaser": "Steuerberatung Teaser",
+
+    "InternationalTaxHeader": "Internationale Steuern",
+    "InternationalTeaser": "Internationale Steuern Teaser",
+
+    "StartUpsHeader": "Unternehmensgründung",
+    "StartUpsTeaser": "Unternehmensgründung Teaser",
+
+    "SocialSecurityHeader": "Sozialversicherung",
+    "SocialSecurityTeaser": "Sozialversicherung Teaser",
+
     "SubsidiesHeader": "Förderungsberatung",
     "SubsidiesTeaser": "Nutzen Sie Förderungen und verschaffen Sie sich zusätzlichen finanziellen Spielraum für Ihre Vorhaben! Wir unterstützen Sie bei der Auswahl und Beantragung der Förderungen und der Abrechnung mit dem Fördergeber.",
     "SubsidiesLong1": "Zahlreiche <strong>Förderungen</strong> bieten Ihnen die Möglichkeiten, sich für Ihr Vorhaben zusätzlichen finanziellen Spielraum zu verschaffen – sei es für Ihre <strong>Unternehmensgründung</strong>, für <strong>Forschungsprojekte</strong>, <strong>Investitionen</strong>, <strong>Umweltschutzmaßnahmen</strong> oder die <strong>Ausbildung von Mitarbeitern</strong>.",
