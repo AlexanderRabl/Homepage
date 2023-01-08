@@ -1,7 +1,9 @@
 {
     "ContactText": "",
     "ContactAlex": "Alexander Rabl",
-    "ContactTitle": "",
+    "ContactAlexTitle": "",
+    "ContactJosef": "Mag. Dr. Josef Rabl",
+    "ContactJosefTitle": "Steuerberater",
     "ContactTelephone": "Téléphone",
     "ContactFormTitle": "Formulaire de contact",
     "ContactFormName": "Votre nom et prénom",

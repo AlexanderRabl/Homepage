@@ -1,7 +1,9 @@
 {
     "ContactText": "Ich freue mich auf Ihre Kontaktaufnahme und ein persönliches Kennenlernen bei einem unverbindlichen Gespräch!",
     "ContactAlex": "Mag. Alexander Rabl",
-    "ContactTitle": "Steuerberater",
+    "ContactAlexTitle": "Steuerberater",
+    "ContactJosef": "Mag. Dr. Josef Rabl",
+    "ContactJosefTitle": "Steuerberater",
     "ContactTelephone": "Telefon",
     "ContactFormTitle": "Kontaktformular",
     "ContactFormName": "Ihr Name",

@@ -26,8 +26,7 @@ const Contact = () => {
   const { t } = useTranslation();
   return (
     <Layout>
-      <PageHeader><Trans>Contact</Trans></PageHeader>
-      <section id="contact" className="py-10">
+      <section id="contact" className="py-16">
         <div
           className="max-w-screen-xl mt-3 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-600">
           <div className="flex flex-col justify-between">
@@ -36,23 +35,38 @@ const Contact = () => {
               <div className="text-gray-800 mt-8">
                 <Trans>ContactText</Trans>
               </div>
-              <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left mt-10">
-                <StaticImage className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="./../images/PortraitfotoContact.jpg" alt="Alexander Rabl Portrait" />
-                <div className="flex-grow sm:pl-8">
-                  <h2 className="title-font font-medium text-lg text-gray-900"><Trans>ContactAlex</Trans></h2>
-                  <h3 className="text-gray-500 mb-3"><Trans>ContactTitle</Trans></h3>
-                  <p className="mb-4"><Trans>ContactTelephone</Trans>: +43 660 284 27 84</p>
-                  <span className="inline-flex">
-                    <a className="text-gray-500" target="_blank" href="https://www.linkedin.com/in/alexander-rabl/">
-                      <Linkedin color='var(--primary-color)' width={32} />
-                    </a>
-                    <a className="ml-5 text-gray-500" target="_blank" href="https://www.xing.com/profile/Alexander_Rabl22">
-                      <Xing color='var(--primary-color)' width={32} />
-                    </a>
-                    <a className="ml-5 text-gray-500 -mt-1 lg:hidden" href="sms:+43 660 284 27 84?body=Test">
-                      <MessageIcon color='var(--primary-color)' width={32} />
-                    </a>
-                  </span>
+              <div className='h-full'>
+                <div className="flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left mt-10 mb-16">
+                  <StaticImage className="flex-shrink-0 rounded-lg w-48 h-48 sm:mb-0 mb-4" src="./../images/PortraitfotoContact.jpg" alt="Alexander Rabl Portrait" />
+                  <div className="flex-grow sm:pl-8">
+                    <h2 className="title-font font-medium text-lg text-gray-900"><Trans>ContactAlex</Trans></h2>
+                    <h3 className="text-gray-500 mb-3"><Trans>ContactAlexTitle</Trans></h3>
+                    <p className="mb-4"><Trans>ContactTelephone</Trans>: +43 660 284 27 84</p>
+                    <span className="inline-flex">
+                      <a className="text-gray-500" target="_blank" href="https://www.linkedin.com/in/alexander-rabl/">
+                        <Linkedin color='var(--primary-color)' width={32} />
+                      </a>
+                      <a className="ml-5 text-gray-500" target="_blank" href="https://www.xing.com/profile/Alexander_Rabl22">
+                        <Xing color='var(--primary-color)' width={32} />
+                      </a>
+                      <a className="ml-5 text-gray-500 -mt-1 lg:hidden" href="sms:+43 660 284 27 84?body=Test">
+                        <MessageIcon color='var(--primary-color)' width={32} />
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div className="flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left mt-10">
+                  <StaticImage className="flex-shrink-0 rounded-lg w-48 h-48 object-center sm:mb-0 mb-4" src="./../images/Josef_Rabl.jpg" alt="Alexander Rabl Portrait" />
+                  <div className="flex-grow sm:pl-8">
+                    <h2 className="title-font font-medium text-lg text-gray-900"><Trans>ContactJosef</Trans></h2>
+                    <h3 className="text-gray-500 mb-3"><Trans>ContactJosefTitle</Trans></h3>
+                    <p className="mb-4"><Trans>ContactTelephone</Trans>: +43 664 928 63 52</p>
+                    <span className="inline-flex">
+                      <a className="ml-5 text-gray-500 -mt-1 lg:hidden" href="sms:+43 664 928 63 52?body=Test">
+                        <MessageIcon color='var(--primary-color)' width={32} />
+                      </a>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
