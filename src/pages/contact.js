@@ -49,7 +49,7 @@ const Contact = () => {
                       <a className="ml-5 text-gray-500" target="_blank" href="https://www.xing.com/profile/Alexander_Rabl22">
                         <Xing color='var(--primary-color)' width={32} />
                       </a>
-                      <a className="ml-5 text-gray-500 -mt-1 lg:hidden" href="sms:+43 660 284 27 84?body=Test">
+                      <a className="ml-5 text-gray-500 -mt-1 lg:hidden" href="sms:+43 660 284 27 84">
                         <MessageIcon color='var(--primary-color)' width={32} />
                       </a>
                     </span>
@@ -62,7 +62,7 @@ const Contact = () => {
                     <h3 className="text-gray-500 mb-3"><Trans>ContactJosefTitle</Trans></h3>
                     <p className="mb-4"><Trans>ContactTelephone</Trans>: +43 664 928 63 52</p>
                     <span className="inline-flex">
-                      <a className="ml-5 text-gray-500 -mt-1 lg:hidden" href="sms:+43 664 928 63 52?body=Test">
+                      <a className="ml-5 text-gray-500 -mt-1 lg:hidden" href="sms:+43 664 928 63 52">
                         <MessageIcon color='var(--primary-color)' width={32} />
                       </a>
                     </span>

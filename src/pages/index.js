@@ -55,7 +55,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <section className="pt-20 mt-24">
-        <div className="container mx-auto px-8 lg:flex">
+        <div className="container mx-auto px-8 lg:flex min-h-screen">
           <div className="text-center lg:text-left lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none lg:mt-16">
               <Trans>PageTitle</Trans>
@@ -73,7 +73,7 @@ const Index = ({ data }) => {
           </div>
         </div>
       </section>
-      <section id="features" className="py-20 px-10 lg:pt-48">
+      <section id="features" className="mb-20 px-10">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold"><Trans>Services</Trans></h2>
           <p className="mt-4 text-gray-500 xl:mt-6">
