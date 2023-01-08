@@ -1,6 +1,6 @@
 import React from 'react';
 
-const mainColor = '#B0C0D7';
+const mainColor = 'var(--primary-color)';
 
 const SvgCharts = () => (
   <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1113.58 784.41">

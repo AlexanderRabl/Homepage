@@ -5,7 +5,7 @@ const MessageIcon = (props) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      stroke="#9BB8D3"
+      stroke="var(--primary-color)"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="2"

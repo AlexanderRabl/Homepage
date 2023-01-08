@@ -47,7 +47,7 @@ const Header = () => {
           className={`${isExpanded ? `block` : `hidden`
             } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
         >
-          <div className="text-md lg:flex-grow px-4 pb-4 pt-4">
+          <div className="text-md lg:flex-grow px-4">
             <NavLink
               to={`/`}
             >

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const mainColor = '#B0C0D7';
+const mainColor = 'var(--primary-color)';
 
 const LostImage = (props) => (
   <svg
