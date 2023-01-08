@@ -19,9 +19,9 @@ const Button = ({ children, className = '' }) => {
         transform
         bg-primary-300
         rounded-md
-        hover:bg-primary-400
+        hover:bg-primary-500
         focus:outline-none
-        focus:bg-primary-400
+        focus:bg-primary-500
         text-white
     `}
     >
